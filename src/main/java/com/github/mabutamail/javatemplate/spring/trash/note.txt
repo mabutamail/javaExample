@@ -1,0 +1,19 @@
+JavaConfig -> BeanDefinition -> BeanFactoryPostProcessor
+
+
+ApplicationContext
+BeanDefinition
+ClassPathXmlApplicationContext(“context.xml”)
+AnnotationConfigApplicationContext(JavaConfig.class)
+XmlBeanDefinitionReader
+BeanDefinitionReader
+AnnotationConfigApplicationContext(JavaConfig.class);
+new AnnotationConfigApplicationContext(“package.name”);
+ClassPathBeanDefinitionScanner
+AnnotatedBeanDefinitionReader
+BeanFactoryPostProcessor
+
+@Component
+@Repository
+@Service
+@Controller

@@ -1,0 +1,3 @@
+hibernate.cfg.xml
+HQL
+Hibernate Validator 6.x

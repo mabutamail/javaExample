@@ -1,0 +1,9 @@
+JPQL - Criteria
+
+EntityManager
+EntityManagerFactory
+
+
+сущности
+связи
+аннотации
