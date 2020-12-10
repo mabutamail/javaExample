@@ -1,0 +1,32 @@
+REM Run psql
+"F:\Java\PostgreSQL\12\bin\psql.exe" -h postgres -U postgres -d basejava -p 5433
+\l список бд
+\c basejava подключиться к бд
+\d список таблиц
+\d jaegers просмотр таблицы
+
+cmd.exe /c chcp 1251
+psql -U postgres -d basejava -p 5433 -f F:\Java\Projects\startjava\src\com\startjava\lesson_5\init_db.sql
+psql -U postgres -d basejava -p 5433 -f F:\Java\Projects\startjava\src\com\startjava\lesson_5\create_db.sql
+psql -U postgres -d basejava -p 5433 -f F:\Java\Projects\startjava\src\com\startjava\lesson_5\querise.sql
+
+psql -U postgres -d tipoGrafDB -p 5433 -f F:\Java\Projects\TipoGraf\src\main\resources\tg_project.sql
+psql -U postgres -d tipoGrafDB -p 5433 -f F:\Java\Projects\TipoGraf\src\main\resources\tg_data.sql
+
+================================================================================================
+pg_ctl - это утилита для инициализации, запуска, остановки и управления сервером PostgreSQL
+переменные среды
+PATH = F:\Java\PostgreSQL\13\bin
+PGDATA = F:\Java\PostgreSQL\data
+                                    F:\Java\PostgreSQL\13\bin\pg_ctl.exe -D "F:\Java\PostgreSQL\data" start
+pg_ctl start
+pg_ctl stop
+pg_ctl restart
+pg_ctl status
+pg_ctl -V
+pg_ctl -?
+
+Чтобы остановить сервер
+F:\Java\PostgreSQL\13\bin\pg_ctl.exe -D "F:\Java\PostgreSQL\data" stop
+Чтобы перезапустить сервер:
+F:\Java\PostgreSQL\13\bin\pg_ctl.exe -D "F:\Java\PostgreSQL\data" restart

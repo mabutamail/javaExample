@@ -19,6 +19,6 @@ public class HashCodeTemplate {
         System.out.println(integer.hashCode());
         System.out.println(s.hashCode());
         System.out.println(s1.hashCode());
-        System.out.println(hashCode.hashCode());    //1072408673
+        System.out.println(hashCode.hashCode());    //748658608
     }
 }

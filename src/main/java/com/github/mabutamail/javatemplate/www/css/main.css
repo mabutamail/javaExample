@@ -1,0 +1,227 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+/** {*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*}*/
+
+/*#first{*/
+/*    float: right;*/
+/*}*/
+/*#secomd{*/
+/*    float: left;*/
+/*    background: blue;*/
+/*}*/
+
+#nav {
+    list-style: none;
+    display: block;
+    float: left;
+    width: 50%;
+    margin-left: 25%;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+#nav li {
+    display: inline;
+    background: #FAFAFA;
+    border: 1px solid silver;
+    padding: 0 20px;
+    cursor: pointer;
+}
+
+#nav li:hover{
+    color: #fff;
+    background: #333;
+    border-radius: 5px;
+    border-color: #333;
+}
+
+#nav li:not(:last-of-type) {
+    margin-right: 20px;
+}
+
+#some_block {
+    background: red;
+    color: #fff;
+    text-align: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: fixed;
+    left: 20px;
+    /*top: 50px;*/
+}
+
+#header, #footer {
+    width: 100%;
+    height: 70px;
+    text-align: center;
+    border-bottom: 4px solid silver;
+    background: #333;
+    color: #fff;
+    line-height: 70px;
+    margin-bottom: 50px;
+    float: left;
+}
+
+#main {
+    width: 50%;
+    margin-left: 10%;
+    background: #FAFAFA;
+    border: 0px solid silver;
+    padding: 20px 2.5%;
+    float: left;
+    position: relative;
+    z-index: 1;
+}
+
+#aside {
+    width: 20%;
+    padding: 20px 2.5%;
+    /*margin-right: 10%;*/
+    background: #FAFAFA;
+    border: 1px solid silver;
+    float: left;
+    margin-left: 5%;
+    top: -10px;
+    left: -200px;
+    position: relative;
+    z-index: 0;
+}
+
+#footer {
+    margin-bottom: 0;
+    margin-top: 50px;
+    border-bottom: 0;
+    border-top: 4px solid silver;
+}
+
+.block1 {
+    font-size: 32pt;
+    background: red;
+    height: 200px;
+    width: 200px;
+    border: 7px solid black;
+    border-radius: 8px;
+
+}
+
+.block {
+    /*position: center;*/
+    display: block;
+    padding: 20px;
+    font-size: 32pt;
+    background: red;
+    height: 200px;
+    width: 75%;
+    border: 7px solid black;
+    border-radius: 8px;
+    opacity: 0.7;
+    margin: 20px;
+}
+
+
+/* https://fonts.google.com/ */
+
+.main_text {
+    color: #000000;
+    text-align: center;
+    font-size: 32px;
+    font-style: italic;
+    /*font-weight: bold;*/
+    font-family: 'Pacifico', cursive;
+
+    text-transform: capitalize;
+    cursor: copy;
+    /*text-decoration: line-through;*/
+    /*word-spacing: 20px;*/
+    /*letter-spacing: 2px;*/
+    /*line-height: 45px;*/
+    float: left;
+}
+
+body {
+    /*Стили для текста*/
+
+    float: left;
+    /*Работа с фоновыми картинками color picker*/
+    background-color: #999999;
+    /*background-image: url('https://therightsofnature.org/wp-content/uploads/2018/01/turkey-3048299_1920-1366x550.jpg');*/
+    /*background-repeat: no-repeat;*/
+    /*background-position: center;*/
+
+    /*background: #4287f5 url("https://therightsofnature.org/wp-content/uploads/2018/01/turkey-3048299_1920-1366x550.jpg") no-repeat center top;*/
+    /*background-size: cover;*/
+    /*background-attachment: fixed;*/
+}
+
+p:last-of-type {
+    text-decoration: line-through;
+}
+
+p.main_link::first-letter {
+    color: green;
+}
+
+p.text:empty::after {
+    content: attr(title);
+}
+
+#some_id::before {
+    content: '123';
+    color: red;
+}
+
+p.text:not(:empty) {
+    color: gray;
+}
+
+input:disabled {
+}
+
+input {
+    color: blue
+}
+
+input:focus {
+    color: red
+}
+
+.main_link {
+    color: red;
+    text-decoration: none;
+}
+
+.main_link:hover {
+    color: blue;
+    text-decoration: underline;
+    text-decoration-color: red;
+    cursor: pointer;
+}
+
+.main_link:active {
+    text-decoration: line-through;
+}
+
+.main_link:visited {
+    color: gray;
+}
+
+.main-text {
+    color: blue;
+}
+
+#text-in-p {
+    color: green;
+}
+
+div b, div i {
+    color: red;
+}
+
+/*тег div     класс .name-class       идентификатор #id      вложенные div p*/
+/*body{*/
+/*    color: red;*/
+/*}*/

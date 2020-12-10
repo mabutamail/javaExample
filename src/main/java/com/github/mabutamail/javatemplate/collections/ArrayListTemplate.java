@@ -1,3 +1,5 @@
+//  O(N)
+
 package com.github.mabutamail.javatemplate.collections;
 
 import java.util.ArrayList;

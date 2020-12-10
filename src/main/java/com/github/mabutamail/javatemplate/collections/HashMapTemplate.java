@@ -1,10 +1,12 @@
+//  O(N)
+
 package com.github.mabutamail.javatemplate.collections;
 
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map;
 
-//  https://habr.com/ru/post/128017/
+//  https://habr.com/ru/post/е128017/
 public class HashMapTemplate {
 
     public static void main(String[] args) {

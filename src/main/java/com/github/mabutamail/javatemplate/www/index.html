@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Изучение JavaScript</title>
+</head>
+<body>
+<h1>
+    <p id="text">Какой-нибудь текст</p>
+</h1>
+
+<button onmouseover="changeColor('blue');">Синий</button>
+<button onclick="changeColor('red');">Красный</button>
+<br>
+<form name="myForm" action="" onsubmit="return validateForm()" method="post">
+    Имя: <input type="text" name="fname">
+    Телефон: <input type="text" name="ftel">
+    <input type="submit" value="Submit">
+</form>
+<br>
+
+<script>
+
+    function validateForm() {
+        var element = document.forms["myForm"]["fname"].value;
+        var tel = document.forms["myForm"]["ftel"].value;
+        if (element === "" || tel === "") {
+            alert("Имя и телефон должны быть заполнено");
+            return false;
+        }
+    }
+
+
+    function changeColor(newColor) {
+        var element = document.getElementById('text');
+        element.style.color = newColor;
+    }
+
+
+    // Создание объектов
+    function Fruit(color, shape) {
+        this.color = color;
+        this.shape = shape;
+    }
+
+    var melon = new Fruit('yellow', 'round');
+    var apple1 = new Fruit('red', 'round');
+
+    var apple = new Object();
+    apple.color = 'green';
+    apple.shape = 'round';
+
+    apple.describe = function () {
+        return 'An apple is ' + this.color;
+    }
+
+    console.log(apple.color);
+    console.log(apple.describe());
+
+
+    var person = {
+        firstName: 'Brad',
+        age: '33',
+        children: ['Lisa', 'Petya'],
+        adress: {
+            street: '555 Some street',
+            sity: 'Boston',
+            state: 'MA'
+        },
+        NameAge: function () {
+            return this.firstName + ", age  " + this.age;
+        }
+    }
+    console.log(person.NameAge());
+    console.log(person.firstName);
+    console.log(person.adress.sity);
+    console.log(person.children[1]);
+
+    // Функции
+    function summ(a, b) {
+        return a + b;
+    }
+
+    document.write(summ(11, 22));
+
+    function write(word) {
+        document.write(word);
+    }
+
+    write("<br/>");
+
+    write("Hello function!");
+    write("<br/>");
+
+    // Условные операторы
+    let res = 0;
+    switch (res) {
+        case 1:
+            alert("res is 1")
+            break;
+        case 2:
+            alert("res is 2")
+            break;
+        case 3:
+            alert("res is 3")
+            break;
+        // default:
+        //     alert("res is other");
+    }
+
+
+    bool1 = true;
+    if (bool1) {
+        console.log("bool is " + bool1);
+        document.write("bool is " + bool1);
+    }
+    document.write("<br/>")
+
+    let l1 = 22;
+    let l2 = 5;
+    if (l1 > l2) {
+        console.log("сработал if");
+    } else {
+        console.log("else сработало")
+    }
+
+    // Циклы
+    var colors_c = ["Red", "Blue", "Green"];
+    for (let i = 0; i < colors_c.length; i++) {
+        document.write("цикл " + colors_c[i]);
+        console.log("цикл " + colors_c[i]);
+    }
+    document.write("<br/>")
+
+
+    // var i = 20;
+    // do {
+    //     console.log(i);
+    // }
+    // while (i < 10);
+
+
+    var j = 0;
+    while (j < 10) {
+        document.write("while " + j);
+        // console.log(("while " + j));
+        j++;
+    }
+    document.write("<br/>")
+
+    for (var i = 0; i < 10; i++) {
+        document.write("for " + i);
+        // console.log("for " + i);
+    }
+    document.write("<br/>");
+
+
+    // Массивы
+    var colors1 = new Array("Red", "Blue", "Green", true, 123, 12.5);
+    colors1[3] = "Gray";
+    colors1.push("Yellow");
+    document.write(colors1[6] + "<br>");
+    var colors = ["Red", "Blue", "Green"];
+    document.write(colors[0] + "<br>");
+
+    // Математические операции, библиотека Math
+    var firstNum = 10;
+    var secondNum = 24;
+    // firstNum += 100;
+    document.write(Math.PI + "<br>");
+    document.write("firstNum: " + firstNum + "<br>");
+    document.write("secondNum: " + secondNum + "<br>");
+    document.write("Результат +: " + (firstNum + secondNum) + "<br>");
+    document.write("Результат *: ", firstNum * secondNum, "<br>");
+
+    // Работа с переменными
+    /**
+     комментарий
+     */
+    var num = 1.45;
+    var Num = "String23";
+    var bool = true;
+    console.log(num + " " + Num + " " + bool);
+
+    // var name = prompt("Как вас зовут?");
+    // console.log("Ваше имя " + name);
+
+    // alert(num);
+</script>
+<!--<script>alert("Helloo World!")</script>-->
+<!--<script src="javascript.js"></script>-->
+</body>
+</html>

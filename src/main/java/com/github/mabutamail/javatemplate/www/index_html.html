@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="autur" content="Mabuta">
+    <meta name="description" content="html template">
+    <meta name="keywords" content="тест, проверка html">
+    <title>Главная страница</title>
+    <!-- подключаем css -->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+<!-- комментарий -->
+<!-- https://ruseller.com/htmlshpora.php -->
+<h1>Оглавление</h1>
+<ol start="1" type="1">
+    <li><a href="#Позиционирование блоков">Позиционирование блоков</a></li>
+    <li><a href="#Стили для блоков">Стили для блоков</a></li>
+    <li><a href="#Специальные HTML5 теги">Специальные HTML5 теги</a></li>
+    <li><a href="#Селекторы выбора">Селекторы выбора</a></li>
+    <li><a href="#Поле для ввода текста. Тег для создания кнопки">Поле для ввода текста. Тег для создания кнопки</a>
+    </li>
+    <li><a href="#формы">формы</a></li>
+    <li><a href="#теги div и span">теги div и span</a></li>
+    <li><a href="#таблицы">таблицы</a></li>
+    <li><a href="#картинки">картинки</a></li>
+    <li><a href="#ссылки">ссылки</a></li>
+    <li><a href="#атрибуты">атрибуты</a></li>
+    <li><a href="#список">список</a></li>
+    <li><a href="#загололовок">заголовок</a></li>
+    <li><a href="#якорь">якорь</a></li>
+    <li><a href="#подключаем Java Script">подключаем Java Script</a></li>
+    <li><a href="https://ruseller.com/htmlshpora.php" target="_blank">Справочники</a></li>
+    <li><a href="http://htmlbook.ru/css" target="_blank">Справочник CSS</a></li>
+    <li><a href="http://htmlbook.ru/html" target="_blank">Справочник HTML</a></li>
+    <li><a href="test.html" target="_blank">мой CSS</a></li>
+</ol>
+
+<div id="some_block">+</div>
+<div id="header">Верх</div>
+<ul id="nav">
+<!--    https://youtu.be/zy4yzUjpnvA -->
+    <li>Главная</li>
+    <li>Про нас</li>
+    <li>Контакты</li>
+</ul>
+<div id="main">основная часть</div>
+<div id="aside">бок</div>
+<div id="footer">Низ</div>
+
+<!-- Позиционирование блоков -->
+<!--<hr>-->
+<!--<a name="Позиционирование блоков"></a>-->
+<!--<h3>Позиционирование блоков</h3>-->
+<!--<div id="first" class="block1"></div>-->
+<!--<div id="secomd" class="block1"></div>-->
+
+
+<!-- Стили для блоков -->
+<hr>
+<a name="Стили для блоков"></a>
+<h3>Стили для блоков</h3>
+<div class="block">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit. A adipisci consectetur consequuntur doloremque doloribus
+    eaque enim explicabo impedit ipsam iusto maxime necessitatibus nulla quis, quod quos reiciendis repellat sed sit!
+</div>
+<!--строчный объект-->
+<!--<span class="block">-->
+<!--    Simple-->
+<!--</span>-->
+
+<!-- Специальные HTML5 теги -->
+<hr>
+<a name="Специальные HTML5 теги"></a>
+<h3>Специальные HTML5 теги</h3>
+<header>Шапка</header>
+<xmp>
+    <header>Шапка</header>
+</xmp>
+<main>Основная часть сайта</main>
+<xmp>
+    <main>Основная часть сайта</main>
+</xmp>
+<aside>Боковая часть сайта</aside>
+<xmp>
+    <aside>Боковая часть сайта</aside>
+</xmp>
+<footer>Футер</footer>
+<xmp>
+    <footer>Футер</footer>
+</xmp>
+<progress max="100" value="35">Загружено на 35%</progress>
+<xmp>
+    <progress max="100" value="35">Загружено на 35%</progress>
+</xmp>
+<details>
+    <summary>подробнее</summary>
+    Lorem ipsum dolor sit.
+</details>
+<xmp>
+    <details>
+        <summary>подробнее</summary>
+        Lorem ipsum dolor sit.
+    </details>
+</xmp>
+
+<!-- Селекторы выбора -->
+<hr>
+<a name="Селекторы выбора"></a>
+<h3>Селекторы выбора</h3>
+<form>
+    <label>
+        <select multiple size="5">
+            <option disabled selected>----</option>
+            <option>BMW</option>
+            <option>Audi</option>
+            <option>Mercedes</option>
+        </select>
+    </label>
+    <xmp>
+        <select multiple size="5">
+            <option disabled selected>----</option>
+            <option>BMW</option>
+            <option>Audi</option>
+            <option>Mercedes</option>
+        </select>
+    </xmp>
+</form>
+
+
+<!-- Поле для ввода текста. Тег для создания кнопки -->
+<hr>
+<a name="Поле для ввода текста. Тег для создания кнопки"></a>
+<h3>Поле для ввода текста. Тег для создания кнопки</h3>
+<form>
+    <textarea placeholder="введите что то" maxlength="50" required>просто текст</textarea>
+    <br>
+    <button type="submit">Готово</button>
+</form>
+<xmp>
+    <textarea placeholder="введите что то" maxlength="50" required>просто текст</textarea>
+    <br>
+    <button type="submit">Готово</button>
+</xmp>
+
+
+<!-- формы -->
+<hr>
+<a name="формы"></a>
+<h3>формы</h3>
+<form action="" method="post">
+    <label for="user_name">Введите имя</label>
+    <input type="text" placeholder="введите что-нибудь" value="текст по умолчанию"
+           maxlength="25" name="user_name" id="user_name">
+    <br>
+    <label>hidden поле
+        <input type="text" placeholder="введите что-нибудь" value="текст по умолчанию" maxlength="25" hidden>
+    </label>
+    <br>
+    <label>disabled поле
+        <input type="text" placeholder="введите что-нибудь" value="текст по умолчанию" maxlength="25" disabled>
+    </label>
+    <br>
+    <label>password<input type="password"></label>
+    <xmp><label>password<input type="password"></label></xmp>
+    <pre><label>password<input type="password"></label></pre>
+    <label>email<input type="email"></label>
+    <xmp><label>email<input type="email"></label></xmp>
+    <label>url<input type="url"></label>
+    <xmp><label>url<input type="url"></label></xmp>
+    <label>color<input type="color"></label>
+    <xmp><label>color<input type="color"></label></xmp>
+    <label>button<input type="button" value="Кнопка"></label>
+    <xmp><label>button<input type="button" value="Кнопка"></label></xmp>
+    <label>reset<input type="reset"></label>
+    <xmp><label>reset<input type="reset"></label></xmp>
+    <label>submit<input type="submit"></label>
+    <xmp><label>submit<input type="submit"></label></xmp>
+    <label>checkbox<input type="checkbox"></label>
+    <xmp><label>checkbox<input type="checkbox"></label></xmp>
+    <label>date<input type="date"></label>
+    <xmp><label>date<input type="date"></label></xmp>
+    <label>time<input type="time"></label>
+    <xmp><label>time<input type="time"></label></xmp>
+    <label>datetime<input type="datetime-local"></label>
+    <xmp><label>datetime<input type="datetime-local"></label></xmp>
+    <label>radio<input type="radio"></label>
+    <xmp><label>radio<input type="radio"></label></xmp>
+    <label>file<input type="file"></label>
+    <xmp><label>file<input type="file"></label></xmp>
+
+</form>
+
+
+<!-- теги div и span -->
+<hr>
+<a name="теги div и span"></a>
+<h3>теги div и span</h3>
+<!-- к блокам div можно применять стили -->
+<div>просто <span>текст</span> тег div</div>
+<div>просто текст тег div</div>
+
+<span>просто текст тег span</span>
+<span>просто текст тег span</span>
+<br>
+
+
+<!-- таблицы -->
+<hr>
+<a name="таблицы"></a>
+<h3>таблицы</h3>
+<table border="1" width="50%">
+    <thead>
+    <tr>
+        <th>Имя header</th>
+        <th>Фамилия header</th>
+    </tr>
+    </thead>
+
+    <tbody align="center">
+    <tr>
+        <td>Джон4 body</td>
+        <td>Смит4 body</td>
+    </tr>
+    <tr>
+        <td>Джон</td>
+        <td>Смит</td>
+    </tr>
+    <tr>
+        <td>Джон2</td>
+        <td>Смит2</td>
+    </tr>
+    <tr>
+        <td>Джон3</td>
+        <td>Смит3</td>
+    </tr>
+    <tr>
+        <td>Джон4</td>
+        <td>Смит4</td>
+    </tr>
+    </tbody>
+
+    <tfoot>
+    <tr>
+        <td>Last footer</td>
+        <td>One footer</td>
+    </tr>
+    </tfoot>
+</table>
+<br>
+
+
+<!-- картинки -->
+<hr>
+<a name="картинки"></a>
+<h3>картинки</h3>
+<img src="images/picture.png" alt="картинка" width="150px">
+<xmp><img src="images/picture.png" alt="картинка" width="150px"></xmp>
+<br>
+<img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"
+     width="100px" title="подсказка" alt="катринка не загрузилась">
+<xmp><img src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png"
+          width="100px" title="подсказка" alt="катринка не загрузилась"></xmp>
+<br>
+
+<!-- ссылки -->
+<hr>
+<a name="ссылки"></a>
+<h3>ссылки</h3>
+<a href="mailto:test@test.com">написать на почту</a>
+<xmp><a href="mailto:test@test.com">написать на почту</a></xmp>
+<br>
+<a href="#bottomOfPage">К якорю, вниз</a>
+<xmp><a href="#bottomOfPage">К якорю, вниз</a></xmp>
+<br>
+<a href="https://www.google.com/" target="_blank" title="нажми на меня">Перейти в Google</a>
+<xmp><a href="https://www.google.com/" target="_blank" title="нажми на меня">Перейти в Google</a></xmp>
+<br>
+<a href="about.html" target="_blank" title="страница про нас">Перейти на страницу про нас</a>
+<xmp><a href="about.html" target="_blank" title="страница про нас">Перейти на страницу про нас</a></xmp>
+
+<!-- атрибуты -->
+<hr>
+<a name="атрибуты"></a>
+<h3>атрибуты</h3>
+<p title="atribute">some text</p>
+
+<!-- непронумерованный список -->
+<hr>
+<a name="список"></a>
+<h3>список</h3>
+<ul>
+    <li>молоко</li>
+    <li>соль</li>
+    <li>гречка</li>
+</ul>
+<xmp>
+    <ul>
+        <li>молоко</li>
+        <li>соль</li>
+        <li>гречка</li>
+    </ul>
+</xmp>
+
+<!-- пронумерованный список -->
+<ol start="1" type="A">
+    <li>молоко</li>
+    <li>соль</li>
+    <li>гречка</li>
+</ol>
+<xmp>
+    <ol start="1" type="A">
+        <li>молоко</li>
+        <li>соль</li>
+        <li>гречка</li>
+    </ol>
+</xmp>
+
+<!-- загололовок -->
+<hr>
+<a name="загололовок"></a>
+<h3>загололовок</h3>
+<h1>загололовок
+    <small>загололовок /small</small>
+    <big>загололовок /big</big>/h1
+    <br>
+    <code>String s = "text";</code>
+</h1>
+<h2>загололовок /h2
+    <pre>
+function some() {
+return "some"
+}
+    </pre>
+</h2>
+<h3>загололовок /h3</h3>
+<h4>загололовок /h4</h4>
+<h5>загололовок /h5</h5>
+<h6>загололовок /h6</h6>
+
+<p>Абзац 1 /p</p>
+обычный
+<b>жирный /b</b>
+<i>курсив /i</i>
+<br>
+<hr>
+<strike>перечеркнутый /strike</strike>
+H<sub>2</sub>
+X<sup>2</sup>
+<br>
+<abbr title="HTML">HTML</abbr>
+<address>Moscow, SU</address>
+
+<!-- якорь -->
+<hr>
+<a name="якорь"></a>
+<h3>якорь</h3>
+<xmp><a name="якорь"></a></xmp>
+
+<!-- подключаем Java Script -->
+<hr>
+<a name="подключаем Java Script"></a>
+<h3>подключаем Java Script</h3>
+<script src="js/main.js"></script>
+<xmp>
+    <script src="js/main.js"></script>
+</xmp>
+<!--<p><code><script src="js/main.js"></script></code></p>-->
+<!--<pre><script src="js/main.js"></script></pre>-->
+
+</body>
+</html>
