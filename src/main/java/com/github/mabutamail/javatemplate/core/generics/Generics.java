@@ -16,10 +16,10 @@ public class Generics {
     public static void main(String[] args) {
 
 
-        List<String> list = Arrays.asList("Hello", "World");
-        List<Integer> data = new ArrayList<>();
-        Integer intNumber = data.get(0);
-        System.out.println(data);
+//        List<String> list = Arrays.asList("Hello", "World");
+//        List<Integer> data = new ArrayList<>();
+//        Integer intNumber = data.get(0);
+//        System.out.println(data);
 
         System.out.println("=================================");
 
@@ -34,14 +34,14 @@ public class Generics {
         listInt.add(222);
         System.out.println(listInt);
 
-//        List<String> list = new ArrayList<>();
-//        list.add("text1");
-//        list.add("text2");
-//        list.add("3");
-//        list.add(null);
-//        list.add("");
-//
-//        System.out.println(list.toString());
+        List<String> list = new ArrayList<>();
+        list.add("text1");
+        list.add("text2");
+        list.add("3");
+        list.add(null);
+        list.add("");
+
+        System.out.println(list.toString());
 
         //  instanceof
         Object[] objects = {10, "Привет", 3.14, "zzz"};

@@ -7,6 +7,21 @@ public class ArrayTemplate {
 
     public static void main(String[] args) {
 
+        int[][] arrtwo = {
+                {1, 2, 3, 34, 432},
+                {4, 5, 6, 7},
+                {8, 9},
+        };
+        System.out.println(arrtwo.length + " Число строк в двумерном массиве");
+        System.out.println(arrtwo[0].length + " Число значений в 1 строке");
+        System.out.println(arrtwo[1].length + " Число значений во 2 строке");
+        System.out.println(arrtwo[2].length + " Число значений в 3 строке");
+        System.out.println(arrtwo[1][3] + " значение в ячейке");
+        System.out.println(Arrays.deepToString(arrtwo) + " Arrays.deepToString(arrtwo)");
+        System.out.println(Arrays.toString(arrtwo) + " Arrays.toString(arrtwo)");
+        System.out.println(arrtwo + " arrtwo");
+        System.out.println("\n================================");
+
         int[] array = new int[12];
         String[] seasons = {"Winter", "Spring", "Summer", "Autumn"};
         int[][] myTwoDimentionalArray = new int[8][8];

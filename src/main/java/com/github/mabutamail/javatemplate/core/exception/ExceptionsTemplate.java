@@ -1,4 +1,4 @@
-package com.github.mabutamail.javatemplate.core;
+package com.github.mabutamail.javatemplate.core.exception;
 
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
@@ -10,16 +10,17 @@ public class ExceptionsTemplate {
     //  https://habr.com/ru/company/golovachcourses/blog/223821/
     //  https://habr.com/ru/company/golovachcourses/blog/225585/
 
-    //      Ключевые слова: try, catch, finally, throw, throws
+    //    Ключевые слова: try, catch, finally, throw, throws
     //    Throwable - класс
     //    Error
     //    Exception
-    //    RuntimeException
-    //    Other - checked exceptions
-    //    try with resources    AutoCloseable
+    //    Compile time exception    Checked     обрабатываем или пробрасываем выше
+    //    RuntimeException          Unchecked   исправляем ошибку в программе (/0 например)
+    //    try with resources        AutoCloseable
     //    trow  trows
 
     public static void main(String[] args) throws Throwable {
+
 
 //        System.err.println("ERROR");
 

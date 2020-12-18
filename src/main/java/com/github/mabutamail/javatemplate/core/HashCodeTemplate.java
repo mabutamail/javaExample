@@ -15,10 +15,10 @@ public class HashCodeTemplate {
         Integer integer = 123;
         String s = "string";    //-891985903
         String s1 = "string1";    //-1881759168
-//        integer.hashCode();
+
         System.out.println(integer.hashCode());
         System.out.println(s.hashCode());
         System.out.println(s1.hashCode());
-        System.out.println(hashCode.hashCode());    //748658608
+        System.out.println(hashCode.hashCode());    //1394438858
     }
 }
