@@ -1,16 +1,31 @@
 package com.github.mabutamail.javatemplate.core;
+
 //https://javarush.ru/groups/posts/630-primitivnihe-tipih-v-java--ne-takie-uzh-oni-i-primitivnihe
 public class Primitives {
-    private static final byte byt = 127;
-    private static final short s = 256;
-    private static final int i = 0;
-    private static final long l = 123_456_78L;
-    private static final float f = 123.456F;
-    private static final double d = 123.456D;
-    private static final char c = 'c';
+    private static final byte byt = 127;        //8 bit     -128..127
+    private static final short s = 256;         //16 bit    -32768..32767
+    private static final int i = 1234567890;             //32
+    private static final long l = 123_456_780_12L;  //64    L обязательно указывать иначе будет int
+
+    private static final float f = 123.456f;    //32    f обязательно указывать!
+    private static final double d = 123.456d;   //64    по умолчанию, d можно не писать
+
+    private static final char c = 'c';          //16 bit    0..65535
     private static final boolean b = true;
 
     public static void main(String[] args) {
+        // классы-обертки, статические методы
+        System.out.println("==================== классы-обертки, статические методы =============================");
+        System.out.println(Byte.hashCode(byt));
+        System.out.println(Short.hashCode(s));
+        System.out.println(Integer.reverse(i));
+        System.out.println(Long.lowestOneBit(l));
+        System.out.println(Float.sum(f, f));
+        System.out.println(Double.toHexString(d));
+        System.out.println(Character.isUpperCase(c));
+        System.out.println(Boolean.logicalOr(b, b));
+        System.out.println("=======================================================================================");
+
 
         System.out.println("\n\t\t\tТип\t\t\tРазмер\tДиапазон\tЗначение по умолчанию\tПример");
         System.out.println(byt + "\t\t\tbyte\t\t8 bits\t[-128,127] или\t[-2^7 to 2^7-1]\t0\tbyte b = 10;byte b = 0b010;");

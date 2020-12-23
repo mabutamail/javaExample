@@ -8,6 +8,9 @@
     <title>Изучение JavaScript</title>
 </head>
 <body>
+<!-- отобразится только если JS отключен в браузере -->
+<noscript>Включите Java Script!!!</noscript>
+
 <h1>
     <p id="text">Какой-нибудь текст</p>
 </h1>
@@ -21,9 +24,7 @@
     <input type="submit" value="Submit">
 </form>
 <br>
-
 <script>
-
     function validateForm() {
         var element = document.forms["myForm"]["fname"].value;
         var tel = document.forms["myForm"]["ftel"].value;
