@@ -1,0 +1,81 @@
+git checkout master 
+git pull --rebase upstream master
+git checkout branch-name
+git rebase master
+git push -f origin branch-name
+
+git clone https://github.com/mabutamail/topjava.git
+
+git clone 
+git init
+git log
+git status
+git add -A		добавить все изменени€ в локальный репозиторий
+git commit -am "comment"
+git remote -v
+git remote add origin https://github.com/mabutamail/startjava.git
+git remote add <shortname> <url>
+git remote show origin
+
+git push -f перезатрет текущую структуру файлов и папок на GitHub
+git push <remote-name> <branch-name>	отправить на удаленный сервер
+git push https://github.com/mabutamail/startjava.git master	
+git pull
+git fetch [remote-name]
+
+git reset HEAD .
+git reset --hard HEAD~2	удалить 2 последних коммита
+git push -f		удалить на удаленном сервере
+git checkout dev	переключитьс€ на ветку
+git checkout -b dev	сразу создать и переключитьс€ на ветку
+git branch dev		создать ветку
+git branch -D dev	удалить ветку
+git branch -a		посмотреть все ветки
+git branch -avv
+git fetch -v		подгрузить все коммиты с мастера			
+git merge master	
+git pull recvest
+
+
+tree		дерево папок
+tree /F		дерево папок с файлами
+mkdir		создать папки
+cd ..		на уровень вверх
+pwd		путь
+rm		удалить
+ls -a		содержимое папки
+
+				компил€ци€
+javac -encoding utf-8 -d out/ src/com/startjava/lesson_2_3/calculator/Calculator*
+				
+				запуск
+java -cp out/ com/startjava/lesson_2_3/calculator/CalculatorTest
+
+
+ѕолезные сочетани€ клавиш в IntelliJ IDEA
+Ctrl + Space 		Ч автодополнение кода
+Alt + Shift + F10 	Ч выбрать файл запуска и выполнить программу
+Ctrl + k 		Ч выполнить коммит
+Ctrl + Shift + k 	Ч выполнить пуш
+Ctrl + p 		Ч сведени€ о параметрах вызываемого метода
+Ctrl + n 		Ч найти класс и перейти к нему
+Ctrl + F12 		Ч список всех полей и методов класса
+Ctrl + / 		Ч однострочное комментирование / раскомментирование
+Ctrl + q 		Ч отобразить справку к методу
+Ctrl + р		Ч отобразить иерархию классов
+
+
+REM Run psql
+"F:\Java\PostgreSQL\12\bin\psql.exe" -h postgres -U postgres -d basejava -p 5433
+\l список бд
+\c basejava подключитьс€ к бд
+\d список таблиц
+\d jaegers просмотр таблицы
+
+cmd.exe /c chcp 1251
+psql -U postgres -d basejava -p 5433 -f F:\Java\Projects\startjava\src\com\startjava\lesson_5\init_db.sql
+psql -U postgres -d basejava -p 5433 -f F:\Java\Projects\startjava\src\com\startjava\lesson_5\create_db.sql
+psql -U postgres -d basejava -p 5433 -f F:\Java\Projects\startjava\src\com\startjava\lesson_5\querise.sql
+
+psql -U postgres -d tipoGrafDB -p 5433 -f F:\Java\Projects\TipoGraf\src\main\resources\tg_project.sql
+psql -U postgres -d tipoGrafDB -p 5433 -f F:\Java\Projects\TipoGraf\src\main\resources\tg_data.sql
