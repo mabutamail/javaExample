@@ -34,7 +34,7 @@ public class MathFuncTest {
 
     @Test
     public void factorial() {
-        assertTrue(math.factorial(0) == 1);
+        assertEquals(1, math.factorial(0));
         assertTrue(math.factorial(1) == 1);
         assertTrue(math.factorial(5) == 120);
     }

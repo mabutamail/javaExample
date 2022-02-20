@@ -16,6 +16,7 @@ public class HashTempl {
 
     public static void main(String[] args) throws FileNotFoundException, NoSuchAlgorithmException {
 
+        LOG.debug("logger test");
         // TODO: хеш не совпадает с онлайн чекером https://emn178.github.io/online-tools/sha256_checksum.html
         //        читаем файл   CF3CAD32240AA828AEAB3C26ECEA7C67FDFC67A70B8A109EE473C7471626045C
         //алгоритм хеширования
