@@ -1,2 +1,44 @@
 [31mWARN [0;39m[main] 20:01:38 o.s.c.a.AnnotationConfigApplicationContext Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userDao' defined in file [F:\Java\Projects\javaExample\target\classes\com\github\mabutamail\javatemplate\spring\trash\UserDao.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'javax.sql.DataSource' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
 [31mWARN [0;39m[main] 20:06:07 o.s.c.a.AnnotationConfigApplicationContext Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userDao' defined in file [F:\Java\Projects\javaExample\target\classes\com\github\mabutamail\javatemplate\spring\trash\UserDao.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'javax.sql.DataSource' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+[34mINFO [0;39m[main] 14:39:49 c.g.m.j.core.alishevcore.writeFile.AppStart Program start
+[34mINFO [0;39m[main] 14:44:54 c.g.m.j.core.alishevcore.writeFile.AppStart Program start
+
+[34mINFO [0;39m[main] 14:52:47 c.g.m.j.core.alishevcore.writeFile.AppStart Program start
+
+[34mINFO [0;39m[main] 14:52:47 c.g.m.j.core.alishevcore.writeFile.AppStart Program start
+
+[34mINFO [0;39m[main] 14:53:15 c.g.m.j.core.alishevcore.writeFile.AppStart Program start
+
+[34mINFO [0;39m[main] 14:53:15 c.g.m.j.core.alishevcore.writeFile.AppStart Program start
+
+[34mINFO [0;39m[main] 14:57:03 c.g.m.j.core.alishevcore.writeFile.AppStart Program start
+
+[34mINFO [0;39m[main] 15:06:52 c.g.m.j.core.alishevcore.writeFile.AppStart Program start
+
+[34mINFO [0;39m[main] 15:08:07 c.g.m.j.core.alishevcore.writeFile.AppStart Program start
+
+[34mINFO [0;39m[main] 15:08:08 c.g.m.j.core.alishevcore.writeFile.AppStart File is writing
+[34mINFO [0;39m[main] 15:08:38 c.g.m.j.core.alishevcore.writeFile.AppStart Program start
+
+[34mINFO [0;39m[main] 15:08:38 c.g.m.j.core.alishevcore.writeFile.AppStart File is writing
+[34mINFO [0;39m[main] 15:08:38 c.g.m.j.core.alishevcore.writeFile.AppStart Program done
+
+[34mINFO [0;39m[main] 15:09:01 c.g.m.j.core.alishevcore.writeFile.AppStart Program start
+
+[34mINFO [0;39m[main] 15:09:01 c.g.m.j.core.alishevcore.writeFile.AppStart File is writing
+[34mINFO [0;39m[main] 15:09:01 c.g.m.j.core.alishevcore.writeFile.AppStart Program done
+
+[34mINFO [0;39m[main] 15:11:09 c.g.m.j.core.alishevcore.writeFile.AppStart Program start
+
+[34mINFO [0;39m[main] 15:11:09 c.g.m.j.core.alishevcore.writeFile.AppStart File is writing
+[34mINFO [0;39m[main] 15:11:09 c.g.m.j.core.alishevcore.writeFile.AppStart Program done
+
+[34mINFO [0;39m[main] 15:11:30 c.g.m.j.core.alishevcore.writeFile.AppStart Program start
+
+[34mINFO [0;39m[main] 15:11:30 c.g.m.j.core.alishevcore.writeFile.AppStart File is writing
+[34mINFO [0;39m[main] 15:11:30 c.g.m.j.core.alishevcore.writeFile.AppStart Program done
+
+[34mINFO [0;39m[main] 15:11:52 c.g.m.j.core.alishevcore.writeFile.AppStart Program start
+
+[34mINFO [0;39m[main] 15:11:52 c.g.m.j.core.alishevcore.writeFile.AppStart File is writing
+[34mINFO [0;39m[main] 15:11:52 c.g.m.j.core.alishevcore.writeFile.AppStart Program done

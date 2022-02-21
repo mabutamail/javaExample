@@ -1,6 +1,6 @@
 package com.github.mabutamail.javatemplate.spring.beans;
 
-import javax.annotation.PostConstruct;
+//import javax.annotation.PostConstruct;
 
 import com.github.mabutamail.javatemplate.spring.model.Employee;
 import org.springframework.context.annotation.Lazy;
@@ -18,7 +18,7 @@ public class EmployeeManagerImpl implements EmployeeManager {
         return emp;
     }
 
-    @PostConstruct
+//    @PostConstruct
     public void onInit(){
         System.out.println("EmployeeManagerImpl Bean is Created !!");
     }
