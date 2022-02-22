@@ -17,11 +17,19 @@ public class WriteObject {
             FileOutputStream fos = new FileOutputStream("people.bin");
             ObjectOutputStream oos = new ObjectOutputStream(fos);
 
-            oos.writeObject(person1);
-            oos.writeObject(person2);
+            oos.writeObject(people);
 
-            System.out.println(person1);
-            System.out.println(person2);
+//            oos.writeInt(people.length);
+//
+//            for (Person person : people) {
+//                oos.writeObject(person);
+//            }
+
+//            oos.writeObject(person1);
+//            oos.writeObject(person2);
+//
+//            System.out.println(person1);
+//            System.out.println(person2);
 
             fos.close();
             log.info("Write objects");
