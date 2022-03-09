@@ -6,7 +6,6 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import lombok.experimental.FieldDefaults;
 
-import java.io.Serial;
 import java.io.Serializable;
 
 @Data
@@ -14,7 +13,7 @@ import java.io.Serializable;
 @NoArgsConstructor
 @FieldDefaults(level = AccessLevel.PRIVATE)
 public class Person implements Serializable {
-    @Serial
+//    @Serial
     private static final long serialVersionUID = 7235965464939155147L;
 
     transient int id;
