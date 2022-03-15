@@ -8,14 +8,12 @@ import java.util.Arrays;
 @Slf4j
 public class ReadObject {
     public static void main(String[] args) {
-        try {
-            FileInputStream fis = new FileInputStream("people.bin");
-            ObjectInputStream ois = new ObjectInputStream(fis);
-
+        try (FileInputStream fis = new FileInputStream("people.bin");
+             ObjectInputStream ois = new ObjectInputStream(fis)) {
+//            FileInputStream fis = new FileInputStream("people.bin");
+//            ObjectInputStream ois = new ObjectInputStream(fis);
             Person[] people = (Person[]) ois.readObject();
             System.out.println(Arrays.toString(people));
-
-
 //            int personCount = ois.readInt();
 //
 //            Person[] people = new Person[personCount];
@@ -31,7 +29,7 @@ public class ReadObject {
 //            System.out.println(person1);
 //            System.out.println(person2);
 
-            ois.close();
+//            ois.close();
             log.info("Read object");
         } catch (IOException | ClassNotFoundException e) {
             e.printStackTrace();
