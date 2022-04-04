@@ -1,11 +1,10 @@
-екффpackage com.github.mabutamail.javatemplate.actual.treeMapTempl;
+package com.github.mabutamail.javatemplate.actual.treeMapTempl;
 
 import com.github.mabutamail.javatemplate.core.timeToLive.Query;
 
 import java.util.Iterator;
 import java.util.Map;
 import java.util.TreeMap;
-import java.util.concurrent.TimeUnit;
 
 public class TreeMapExample {
     public static void main(String[] args) throws InterruptedException {

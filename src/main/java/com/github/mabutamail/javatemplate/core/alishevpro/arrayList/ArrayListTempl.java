@@ -1,4 +1,4 @@
-package com.github.mabutamail.javatemplate.core.alishevpro;
+package com.github.mabutamail.javatemplate.core.alishevpro.arrayList;
 
 import lombok.extern.slf4j.Slf4j;
 
