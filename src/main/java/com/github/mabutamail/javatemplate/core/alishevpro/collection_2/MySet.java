@@ -65,7 +65,7 @@ public class MySet {
         log.info("set " + set);
     }
 
-    public static void fillSet(Set set, int sizeFrom, int sizeTo) {
+    public static void fillSet(Set<Integer> set, int sizeFrom, int sizeTo) {
         for (int i = sizeFrom; i < sizeTo; i++) {
             set.add(i);
         }
