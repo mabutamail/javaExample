@@ -13,7 +13,7 @@ public class QueueTempl {
         PersonQ person3 = new PersonQ(3);
         PersonQ person4 = new PersonQ(4);
 
-        Queue<PersonQ> people = new ArrayBlockingQueue<PersonQ>(3);
+        Queue<PersonQ> people = new ArrayBlockingQueue<>(3);
 //        Queue<PersonQ> people = new LinkedList<>();
 //        log.info("" + people.add(person3));
 //        log.info("" + people.add(person2));
