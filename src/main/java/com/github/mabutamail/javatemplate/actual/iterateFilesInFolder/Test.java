@@ -4,13 +4,13 @@ import lombok.extern.slf4j.Slf4j;
 
 import java.io.File;
 import java.io.FilenameFilter;
-import java.util.Arrays;
-import java.util.Objects;
+import java.util.*;
 
 @Slf4j
 public class Test {
 
     public static void main(String... args) {
+        List<String> listFilename = new ArrayList<>();
         //  путь к папке
         File dir = new File("src\\main\\java\\com\\github\\mabutamail\\javatemplate" +
                 "\\actual\\iterateFilesInFolder\\tempFiles");
@@ -19,15 +19,19 @@ public class Test {
         for (File file : Objects.requireNonNull(dir.listFiles())) {
             if (file.isDirectory()) {
                 //  если в папке не файл а вложенная папка - выводим имя
-                System.out.println("Directory: " + file.getName());
+//                System.out.println("Directory: " + file.getName());
             } else {
                 //  если файл - выводим его имя
                 System.out.println("File: " + file.getName());
+                listFilename.add(file.getName());
 //                file.delete();
             }
         }
-
-        getFilesByMask(String.valueOf(dir), "1.txt");
+        Collections.sort(listFilename);
+        System.out.println("сортированный listFilename:\n" + listFilename);
+        Collections.reverse(listFilename);
+        System.out.println("обратная сортировка listFilename:\n" + listFilename);
+//        getFilesByMask(String.valueOf(dir), "mess*");
     }
 
     public static String[] getFilesByMask(String directory, String mask) {
