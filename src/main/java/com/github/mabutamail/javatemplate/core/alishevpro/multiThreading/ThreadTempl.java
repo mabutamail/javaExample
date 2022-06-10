@@ -3,7 +3,7 @@ package com.github.mabutamail.javatemplate.core.alishevpro.multiThreading;
 import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
-public class Thread {
+public class ThreadTempl {
     public static void main(String[] args) throws InterruptedException {
         java.lang.Thread thread = new java.lang.Thread(new Runnable());
         thread.start();
