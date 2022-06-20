@@ -6,4 +6,4 @@ target
 logs
 *.patch
 /lib/
-/logs/
+/logs
