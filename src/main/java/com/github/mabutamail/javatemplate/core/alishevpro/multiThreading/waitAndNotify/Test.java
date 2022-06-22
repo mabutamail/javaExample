@@ -19,16 +19,13 @@ public class Test {
             }
         });
 
-        Thread thread2 = new Thread(new Runnable() {
-            @Override
-            public void run() {
-                try {
-                    wn.consume();
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
-                }
-
+        Thread thread2 = new Thread(() -> {
+            try {
+                wn.consume();
+            } catch (InterruptedException e) {
+                e.printStackTrace();
             }
+
         });
 
         thread1.start();
