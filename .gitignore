@@ -7,3 +7,4 @@ logs
 *.patch
 /lib/
 /logs
+/spring-websockets/
